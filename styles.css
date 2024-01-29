@@ -49,3 +49,14 @@ p {
 .contact-details strong {
     font-weight: bold;
 }
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.image-container img {
+    width: 45%; /* Adjust as needed for spacing */
+}
