@@ -1,17 +1,17 @@
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
-    color: #333;
-    background-color: #f4f4f4;
-    text-align: justify;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: center;
     margin: 0;
 }
 
 .animated-heading {
     color: #FF8C00;
     text-align: center;
-    font-size: 3em; /* Adjust the font size as needed */
-    animation: pulse 2s infinite; /* Animation effect */
+    font-size: 3em;
+    animation: pulse 2s infinite; 
 }
 
 @keyframes pulse {
@@ -54,9 +54,75 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1px;
+    gap: 5px;
+    margin-bottom: 10px;
 }
 
 .image-container img {
-    width: 45%; /* Adjust as needed for spacing */
+    width: 49%; 
 }
+ul {
+    text-align: justify;
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    display: block;
+    margin-bottom: 5px; 
+  }
+  .button-container {
+    text-align: center;
+  }
+
+  .cool-button {
+    padding: 10px 20px;
+    background-color:  #006400;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: inline; 
+  }
+
+  .cool-button:hover {
+    transform: scale(1.1);
+  } 
+
+footer
+{text-align: center; background-color: #383737; color: #fff; padding: 20px;}
+
+
+#dark-mode-toggle {
+    transform: rotate(180);
+    position: fixed;
+    font-size: 1cm;
+    top: 1px;
+    right: 10px;
+    width: 1cm; /* Increased width for better touch area */
+    height: 1cm;
+    border: none;
+    background: none;
+    
+}
+
+
+.dark-mode footer
+{background-color: #000000;}
+
+.dark-mode {
+    background-color: #2f2f2f; /* Dark gray background */
+    color: #ffffff; /* White text */
+}
+
+
+#dark-mode-toggle i {
+    font-size: 1cm;
+    transition: color 0.9s, transform 0.9s; /* Transition for color and rotation */
+}
+
+.dark-mode-toggle.dark-mode i {
+    transform: rotate(180deg); /* Rotate the sun icon for dark mode */
+}
+
